@@ -1,0 +1,101 @@
+/* ----- Practice set 2 -----
+1. Create a heading centered on the page with all of its text capitalized by default.
+2. Set font amily of all the content in te document to "Times New Roman"
+3.Create on e dive inside other set id & text outer & inner resp and set text size 25px and 10 px*/
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize ;
+}
+#inner {
+    font-size: 10px;
+}
+#outer{
+    font-size: 25px;
+}
+/*Box Model --------- Traffic Light*/
+#traffic_light{
+    border-color: black;
+    border-style: solid;
+    height: 400px;
+    width:150px;
+    background-color: rgb(222, 215, 215);
+}
+#three{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    margin:25px 25px 25px 25px;
+    border: black;
+    border-style: solid;
+}
+#red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    margin:25px 25px 25px 25px;
+}
+#yellow{
+    height:100px;
+    width:100px;
+    background-color:yellow;
+    border-radius:50px;
+    margin:25px 25px 25px 25px;
+    border: solid black; /* shorthand border: width style color;    */
+}
+h2{
+    border-color: black;
+    border-style:dotted;
+    height:50px;
+    width:400px;
+     text-align: center; /* text is in center as per the width given */
+}
+.navbar{
+    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+     text-decoration: none; /*remove underline from <a> */
+     color:black;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+
+/* Practice Set 7
+Add a media query to implement the following:
+the color of a div changes to green for viewport width less than 300px
+1.the color of a div changes to pink for width between 300px & 400px
+2.the color of a div changes to red for width between 400px & 600px
+3.the color of a div changes to blue for width above 600px */
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
+}
+@media (max-width: 300px){
+    #box{
+        background-color: green;
+    }
+}
+@media (min-width:300px)and (max-width: 400px){
+    #box{
+        background-color: pink;
+    }
+}
+@media (min-width:400px)and (max-width: 600px){
+    #box{
+        background-color: red;
+    }
+}
+@media (min-width:600px){
+    #box{
+        background-color: rgb(0, 162, 255);
+    }
+}
